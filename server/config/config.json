@@ -4,7 +4,7 @@
         "MONGODB_URI": "mongodb://localhost:27017/netguru_test",
         "API_KEY": "7fd64118"
     },
-    "development": {
+    "production": {
         "PORT": 3000,
         "MONGODB_URI": "mongodb://localhost:27017/netguru",
         "API_KEY": "7fd64118"
