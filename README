@@ -22,7 +22,7 @@ GET /movies
 Returns a list of all movies stored in database.
 
 POST /comments
-Require's the following object as parameter passed by JSON data:
+Require's the following object as parameter passed by JSON data(_movieId it's a imdbID from movie collection):
 {
     "text": "New comment",
     "author": "Author Third",
@@ -33,7 +33,7 @@ If the request will pass correctly the comment will be saved in database and you
 If the request will fail you will get error message.
 
 GET /comments
-Require's one parameter, movie ID(it's a imdbID from movie collection) passed by JSON data, like following:
+Require's one parameter, _movieId(it's a imdbID from movie collection) passed by JSON data, like following:
 {
     "_movieId": "xxx"
 }
