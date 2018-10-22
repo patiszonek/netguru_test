@@ -1,7 +1,10 @@
 This is an API for Netguru interview needs
 (Require MOngoDB database)
 
-In the <b>config.json</b> you can set this parameters:
+You can test this API here:
+http://agile-anchorage-35443.herokuapp.com
+
+In the config.json you can set this parameters:
 - MONGODB_URI -> This is a connection string to MongoDb database
 - PORT -> This is the port number on which the server should works
 - API_KEY -> This is a API key for http://www.omdbapi.com
