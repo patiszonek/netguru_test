@@ -1,11 +1,12 @@
-<b>This is an API for Netguru interview needs</b>
+This is an API for Netguru interview needs
+(Require MOngoDB database)
 
 In the <b>config.json</b> you can set this parameters:
 - MONGODB_URI -> This is a connection string to MongoDb database
 - PORT -> This is the port number on which the server should works
 - API_KEY -> This is a API key for http://www.omdbapi.com
 
-<b>POST /movies</b>
+POST /movies
 Require's one parameter, movie title passed by JSON data, like following:
 {
     "title": "xxx"
@@ -14,10 +15,10 @@ Require's one parameter, movie title passed by JSON data, like following:
 If the request will pass correctly the movie will be saved in database and you will get response with movie information.
 If the request will fail you will get error message.
 
-<b>GET /movies</b>
+GET /movies
 Returns a list of all movies stored in database.
 
-<b>POST /comments</b>
+POST /comments
 Require's the following object as parameter passed by JSON data:
 {
     "text": "New comment",
@@ -28,7 +29,7 @@ Require's the following object as parameter passed by JSON data:
 If the request will pass correctly the comment will be saved in database and you will get response with comment information.
 If the request will fail you will get error message.
 
-<b>GET /comments</b>
+GET /comments
 Require's one parameter, movie ID(it's a imdbID from movie collection) passed by JSON data, like following:
 {
     "_movieId": "xxx"
